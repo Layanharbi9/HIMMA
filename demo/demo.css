@@ -1,0 +1,28 @@
+/* Small additions for the static demo; everything else is HIMMA's own compiled Tailwind CSS. */
+.demo-bar {
+  position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 60;
+  max-width: min(94vw, 820px); display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: .3rem .8rem; padding: .55rem 1.1rem; border-radius: 999px;
+  background: rgba(11, 16, 32, .92); color: #e5e7eb; font: 500 12.5px/1.4 var(--font-cairo, system-ui), system-ui, sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3); backdrop-filter: blur(8px); border: 1px solid rgba(124, 58, 237, .35);
+}
+.demo-bar b { color: #5eead4; }
+.demo-bar a { color: #c4b5fd; font-weight: 700; text-decoration: none; }
+.demo-bar a:hover { text-decoration: underline; }
+main { padding-bottom: 5rem !important; }
+
+.demo-chips { display: flex; flex-wrap: wrap; gap: .4rem; padding: .6rem .75rem 0; }
+.demo-chip {
+  font-size: 12px; padding: .35rem .75rem; border-radius: 999px; cursor: pointer;
+  border: 1px dashed rgba(37, 99, 235, .45); background: rgba(37, 99, 235, .08); color: inherit;
+}
+.demo-chip:hover { background: rgba(37, 99, 235, .16); }
+.demo-chip:disabled { opacity: .5; cursor: default; }
+.demo-sample {
+  display: inline-flex; align-items: center; gap: .5rem; font-size: 13px; padding: .5rem .9rem; border-radius: .75rem;
+  cursor: pointer; border: 1px dashed currentColor; background: transparent; color: inherit; opacity: .9;
+}
+.demo-sample:hover { opacity: 1; }
+.demo-preview { max-height: 220px; width: auto; border-radius: .75rem; border: 1px solid rgba(148, 163, 184, .35); background: #fff; }
+.demo-note { font-size: 12px; opacity: .75; }
+@media (max-width: 600px) { .demo-bar { bottom: 10px; padding: .45rem .9rem; } .demo-bar span { display: none; } }
